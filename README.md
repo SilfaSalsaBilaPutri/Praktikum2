@@ -55,8 +55,8 @@ Code di atas menggunakan access modifier private rtinya atribut ini hanya dapat 
         System.out.println("Umur: " + umur);
     }
  ```
-Code di atas menggunakan access modifier public Untuk mengakses atau mengubah nilai atribut private diperlukan metode getter dan setter yang bersifat public. Pada metode ini memungkinkan siapa pun yang memiliki objek Person untuk mengakses atau mengubah nilai atribut tersebut secara aman, tanpa mengaksesnya langsung. Metode ini bisa diakses dari luar kelas untuk menampilkan informasi mengenai objek Person secara lengkap metode ini juga bisa diakses oleh kode lain.
--  Membuat dua buah objek dari class Person
+Code di atas menggunakan access modifier public untuk mengakses atau mengubah nilai atribut private diperlukan metode getter dan setter yang bersifat public. Pada metode ini memungkinkan siapa pun yang memiliki objek Person untuk mengakses atau mengubah nilai atribut tersebut secara aman, tanpa mengaksesnya langsung. Pada metode tampilkanInformasi bisa diakses dari luar kelas untuk menampilkan informasi mengenai objek Person secara lengkap, metode tampilkanInformasi juga bisa diakses oleh kode lain.
+-  Membuat dua buah objek dari class Person dan memanggil method setter dan getter
 ```
     // Main method untuk menjalankan program
     public static void main(String[] args) {
@@ -74,3 +74,4 @@ Code di atas menggunakan access modifier public Untuk mengakses atau mengubah ni
     }
 ```
 # Hasil output
+![image](https://github.com/user-attachments/assets/edf5ffd3-ead8-459b-9719-ca8453d089f4)
