@@ -10,17 +10,17 @@ Buatlah kode program java untuk:
     private String nama;
     private String jenisKelamin;
     private int umur;
+```
+Code di atas menggunakan access modifier private artinya atribut ini hanya dapat diakses dari dalam kelas Person itu sendiri. Kelas atau objek lain tidak dapat langsung mengakses atribut ini, sehingga melindungi data tersebut dari manipulasi langsung dari luar kelas.
 
+```
     // Constructor untuk menginisialisasi atribut
     public Person(String nama, String jenisKelamin, int umur) {
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
         this.umur = umur;
     }
-```
-Code di atas menggunakan access modifier private rtinya atribut ini hanya dapat diakses dari dalam kelas Person itu sendiri. Kelas atau objek lain tidak dapat langsung mengakses atribut ini, sehingga melindungi data tersebut dari manipulasi langsung dari luar kelas.
 
-```
     // Getter dan Setter untuk atribut nama
     public String getNama() {
         return nama;
