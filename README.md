@@ -2,7 +2,7 @@ Buatlah kode program java untuk:
 - Mendeklarasikan class Person, dengan atribut Nama, JenisKelamin, Umur dan lengkapi dengan access modifier.
 - Buatlah dua buah objek dari class Person bernama Anton dan Riko dan panggil method setter dan getter.
 ![Screenshot 2024-10-13 212053](https://github.com/user-attachments/assets/60e59072-a986-4428-952d-567cd3368c2f)
-
+# Pengimplenmentasiannya
 - Mendeklarasikan class person
 ```
     public class Person {
@@ -17,7 +17,10 @@ Buatlah kode program java untuk:
         this.jenisKelamin = jenisKelamin;
         this.umur = umur;
     }
+```
+Code di atas menggunakan access modifier private rtinya atribut ini hanya dapat diakses dari dalam kelas Person itu sendiri. Kelas atau objek lain tidak dapat langsung mengakses atribut ini, sehingga melindungi data tersebut dari manipulasi langsung dari luar kelas.
 
+```
     // Getter dan Setter untuk atribut nama
     public String getNama() {
         return nama;
@@ -52,3 +55,22 @@ Buatlah kode program java untuk:
         System.out.println("Umur: " + umur);
     }
  ```
+Code di atas menggunakan access modifier public Untuk mengakses atau mengubah nilai atribut private diperlukan metode getter dan setter yang bersifat public. Pada metode ini memungkinkan siapa pun yang memiliki objek Person untuk mengakses atau mengubah nilai atribut tersebut secara aman, tanpa mengaksesnya langsung. Metode ini bisa diakses dari luar kelas untuk menampilkan informasi mengenai objek Person secara lengkap metode ini juga bisa diakses oleh kode lain.
+-  Membuat dua buah objek dari class Person
+```
+    // Main method untuk menjalankan program
+    public static void main(String[] args) {
+        // Membuat objek Person bernama Antor dan Riko
+        Person antor = new Person("Antor", "Laki-laki", 18);
+        var riko = new Person("Riko", "Laki-laki", 19);
+
+        // Menampilkan informasi untuk Antor
+        System.out.println("Informasi Antor:");
+        antor.tampilkanInfo();
+
+        // Menampilkan informasi untuk Riko
+        System.out.println("\nInformasi Riko:");
+        riko.tampilkanInfo();
+    }
+```
+# Hasil output
